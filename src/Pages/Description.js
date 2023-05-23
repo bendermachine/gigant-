@@ -5,6 +5,9 @@ class Description extends Component {
         return (
             <div>
                 <h1>Описание</h1>
+                <div>
+
+                </div>
             </div>
         );
     }

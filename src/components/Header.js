@@ -7,6 +7,8 @@ import Home from "../Pages/Home";
 import Add from "../Pages/Add";
 import Description from "../Pages/Description";
 import Account from "../Pages/account";
+import Ads from "../Pages/ads"
+
 
 class Header extends Component {
     render() {
@@ -26,7 +28,7 @@ class Header extends Component {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link href={'/'}> Объявления </Nav.Link>
+                            <Nav.Link href={'/Ads'}> Объявления </Nav.Link>
                             <Nav.Link href={'/Add'}> Добавить объявление </Nav.Link>
                             <Nav.Link href={'/Account'}> Личный кабинет </Nav.Link>
 
@@ -51,7 +53,7 @@ class Header extends Component {
             {/*</Routes>*/}
 
                <Routes>
-                   <Route path="/" element={<Home />} />
+                   <Route path="/Ads" element={<Ads />} />
                    <Route path="/Add" element={<Add/>} />
                    <Route path={"/Description"} element={<Description/>} />
                    <Route path={"/Account"} element={<Account/>} />
