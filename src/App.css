@@ -1,0 +1,17 @@
+:root {
+    --bodyColor: "#000000";
+}
+body {
+    background-color: var(--bodyColor);
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 16px;
+    background-color: bisque;
+}
+.block{
+    border-radius: 3px;
+    border-width: 2px;
+    border-color: black;
+}
