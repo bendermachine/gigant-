@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../App.css'
 import '../add.css'
-import { Form, FormControl } from "react-bootstrap";
+import {Button, Form, FormControl} from "react-bootstrap";
 import photo from '../components/photo_logo.svg'
 import "react-modern-calendar-datepicker/lib/DatePicker.css";
 import { Calendar } from "react-modern-calendar-datepicker";
@@ -105,7 +105,9 @@ function Add() {
                             />
                         </Form>
                 </div>
+                <Button variant="secondary" type="submit" style={{backgroundColor:'gray', border:'0px', padding: '10px', marginLeft:'527px',marginBottom:"30px"}}>Отправить</Button>{' '}
             </div>
+
         </div>
     );
 }

@@ -16,7 +16,7 @@ class Header extends Component {
             <>
             <Navbar fixed={"top"} collapseOnSelect expand="md" bg = "light" variant="light">
                 <Container>
-                    <Navbar.Brand href="/">
+                    <Navbar.Brand href="/Ads">
                         <img
                             src = {logo}
                             height="60"
@@ -46,11 +46,6 @@ class Header extends Component {
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
-
-            {/*<Routes>*/}
-            {/*<Route path='/home' element={<Home />}/>*/}
-            {/*<Route path='/add' element={<Add/>}/>*/}
-            {/*</Routes>*/}
 
                <Routes>
                    <Route path="/Ads" element={<Ads />} />

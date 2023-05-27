@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 // import {useHistory} from "react-router";
 import kosmoport from '../components/kosmoport.jpg'
+import Header from "../components/Header";
 
 function City(props) {
     return <p>{props.name}</p>;
@@ -23,7 +24,7 @@ function Photo(props) {
                 src={kosmoport} width={180} height={120}/>;
 }
 // const city = <City name = "Сургут"/>
-class Description extends Component {
+class Ads extends Component {
     // history = useHistory();
     // clickToDescription = () => {
     // history.push('/')
@@ -31,7 +32,12 @@ class Description extends Component {
 
     render() {
         return (
+
             <div>
+                {/*<div>*/}
+                {/*    <Header/>*/}
+
+                {/*</div>*/}
                 <div
                     style={{
                         display: 'flex',
@@ -159,7 +165,7 @@ class Description extends Component {
                         // margin:'auto',
                         marginLeft:"41%",//780
                         borderRadius:16,
-                        marginTop:-105
+                        marginTop:-107
                     }}>
                     <p
                         style={{
@@ -252,7 +258,7 @@ class Description extends Component {
                         // margin:'auto',
                         marginLeft:"66%",
                         borderRadius:16,
-                        marginTop:-105
+                        marginTop:-107
                     }}>
                     <p
                         style={{
@@ -340,4 +346,4 @@ class Description extends Component {
     }
 }
 
-export default Description;
+export default Ads;
