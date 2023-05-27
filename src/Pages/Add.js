@@ -5,6 +5,7 @@ import { Form, FormControl } from "react-bootstrap";
 import photo from '../components/photo_logo.svg'
 import "react-modern-calendar-datepicker/lib/DatePicker.css";
 import { Calendar } from "react-modern-calendar-datepicker";
+import DatePicker from "react-modern-calendar-datepicker";
 
 const defaultValue = {
     year: 2023,
@@ -47,7 +48,7 @@ function Add() {
 
                 <hr style={{width:"95%", margin: 'auto'}}></hr>
                 <div className="wrapper">
-                    <div className={"block"}>
+                    <div className={"block"} style={{height:"583px", paddingTop:"30%"}}>
                         <div className="mb-4 d-flex justify-content-center">
                             <img src={photo} alt="Прикрепите фотографии"/>
                         </div>
@@ -63,40 +64,46 @@ function Add() {
                             <FormControl
                                 type="text"
                                 placeholder="Выберите город"
-                                className="form"
+                                className="blockform"
                             />
                         </Form>
+                        <div className={"calendar"}>
                         <Calendar
                             value={selectedDay}
                             onChange={setSelectedDay}
                             shouldHighlightWeekends
+                            colorPrimary="gray"
                         />
+                    </div>
                         <Form inline>
                             <FormControl
                                 type="text"
                                 placeholder="Укажите требования"
-                                className="form"
+                                className="blockform"
+                            />
+                        </Form>
+                        <Form inline>
+                            <FormControl
+                                type="text"
+                                placeholder="Ваши жанры"
+                                className="blockformgenre"
                             />
                         </Form>
                     </div>
-                    <div className={"block"}>
                         <Form inline>
-                            <FormControl
+                            <Form.Control as="textarea"
                                 type="text"
                                 placeholder="Введите описание"
-                                className="form"
+                                className="textareaform"
                             />
                         </Form>
-                    </div>
-                    <div className={"block"}>
                         <Form inline>
-                            <FormControl
+                            <Form.Control as="textarea"
                                 type="text"
                                 placeholder="Ваше оборудование"
-                                className="form"
+                                className="textareaform"
                             />
                         </Form>
-                    </div>
                 </div>
             </div>
         </div>
