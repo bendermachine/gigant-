@@ -44,3 +44,60 @@ body {
     border-radius: 16px;
     width: 536px
 }
+body {
+    background-color: #EFF6FF;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+}
+.block{
+    border-radius: 16px;
+    border: 1px lightgrey solid;
+    margin: 10px;
+    padding: 20px;
+}
+.form{
+    width:300px;
+    display: flex;
+    margin: 20px auto;
+    padding: 6px 13px 6px;
+    border-radius: 16px;
+}
+.blockform{
+    display: flex;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 6px 13px 6px;
+    border-radius: 16px;
+}
+.blockformgenre{
+    display: flex;
+    margin: auto;
+    padding: 6px 13px 6px;
+    border-radius: 16px;
+}
+.calendar{
+    padding-left: 15%;
+    margin-bottom: 20px;
+}
+.textareaform{
+    display: flex;
+    margin: 10px;
+    padding: 6px 13px 6px;
+    border-radius: 16px;
+    width: 536px
+}
+.genre{
+    background-color: #69706D;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    width: 100px;
+    position: relative;
+}
+.genre-wrapper{
+    display: grid;
+    grid-template-columns: 110px 110px 110px 110px;
+}
